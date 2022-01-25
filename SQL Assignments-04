@@ -1,0 +1,11 @@
+Q-1. Write an SQL query to print the FIRST_NAME from Worker table after replacing ‘a’ with ‘A’.
+
+Ans. select replace(FIRST_NAME,"a","A") New_Name from worker;
+
+Q-2. Write an SQL query to print all Worker details from the Worker table order by FIRST_NAME Ascending and DEPARTMENT Descending.
+
+Ans. select * from worker order by Department desc,FIRST_NAME asc;
+
+Q-3. Write an SQL query to fetch the names of workers who earn the highest salary.
+
+Ans. select FIRST_NAME, max(salary) SAL, DEPARTMENT from worker group by DEPARTMENT;
